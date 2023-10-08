@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Hide YouTube Shorts",
+  "version": "0.1.0",
+  "description": "A chrome extension for hiding YouTube shorts to regain your productivity while using YouTube.",
+  "permissions": ["storage", "tabs"],
+  "action": {
+    "default_title": "Hide YouTube Shorts"
+  },
+  "author": "Similoluwa Okunowo",
+  "host_permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

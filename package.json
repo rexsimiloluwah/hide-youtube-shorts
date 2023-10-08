@@ -1,0 +1,21 @@
+{
+  "name": "hide-yt-shorts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/**/*.html src/**/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "staticFiles": {
+    "staticPath": "src/public",
+    "watcherGlob": "**"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "^2.9.3",
+    "parcel": "^2.9.3",
+    "parcel-reporter-static-files-copy": "^1.5.3"
+  }
+}
